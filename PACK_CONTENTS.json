@@ -1,0 +1,57 @@
+{
+  "package": "ASD3DP_v0.4.1_GitHub_repository_pack",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/data_issue.yml",
+      "bytes": 1898
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "bytes": 687
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 407
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 877
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 1279
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1792
+    },
+    {
+      "path": "GITHUB_ABOUT.md",
+      "bytes": 2471
+    },
+    {
+      "path": "LICENSE_NOTICE.md",
+      "bytes": 1184
+    },
+    {
+      "path": "README.md",
+      "bytes": 13235
+    },
+    {
+      "path": "docs/ANNOTATION_PROTOCOL.md",
+      "bytes": 5742
+    },
+    {
+      "path": "docs/DATASET_CARD.md",
+      "bytes": 6316
+    },
+    {
+      "path": "docs/RELEASE_CHECKLIST.md",
+      "bytes": 2630
+    },
+    {
+      "path": "metadata/GITHUB_ZENODO_INTEGRATION.md",
+      "bytes": 1330
+    }
+  ]
+}

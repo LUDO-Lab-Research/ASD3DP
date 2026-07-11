@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use ASD3DP, please cite the dataset using this metadata."
+type: dataset
+title: "ASD3DP: A Real-World Four-Channel 3D-Printer Operating-Sound Dataset for Anomalous Sound Detection"
+version: "0.4.1"
+authors:
+  - family-names: "REPLACE_WITH_FAMILY_NAME"
+    given-names: "REPLACE_WITH_GIVEN_NAMES"
+abstract: >-
+  ASD3DP is an audio-centered dataset for anomalous sound detection and
+  machine-condition monitoring in fused-filament-fabrication 3D printing. It
+  contains four-channel recordings from a Voron 0.2-class printer, covering
+  normal operation, belt-tension and extrusion/nozzle soft anomalies, and
+  toolhead-collision hard anomalies, together with G-code, telemetry, temporal
+  alignment, and session/clip metadata.
+keywords:
+  - anomalous sound detection
+  - machine condition monitoring
+  - 3D printing
+  - fused filament fabrication
+  - additive manufacturing
+  - multichannel audio
+  - acoustic monitoring
+  - fault detection
+  - predictive maintenance
+  - G-code
+  - telemetry
+  - domain generalization
+  - Voron V0
+  - DCASE
+# Add the following after publication:
+# doi: "10.5281/zenodo.XXXXXXX"
+# date-released: "YYYY-MM-DD"
+# url: "https://doi.org/10.5281/zenodo.XXXXXXX"
+# repository-code: "https://github.com/OWNER/ASD3DP"
