@@ -69,11 +69,11 @@ the machine. Distances are approximate and refer to the nearest corresponding
 printer side.
 
 ```text
-                         REAR MICROPHONE
-                              ↘
-          LEFT MICROPHONE  ↘  [ VORON V0.2 ]  ↙  RIGHT MICROPHONE
-                              ↗
-                         FRONT MICROPHONE
+                              REAR MICROPHONE
+                                    ↓
+          LEFT MICROPHONE  →  [ VORON V0.2 ]  ←  RIGHT MICROPHONE
+                                    ↑
+                             FRONT MICROPHONE
 
               approximately 5 cm from the corresponding printer side
 ```
@@ -332,7 +332,7 @@ See [`LICENSE_NOTICE.md`](LICENSE_NOTICE.md).
 
 ## Contact
 
-- **Maintainer:** [CONTACT_NAME]
-- **Email:** [CONTACT_EMAIL]
+- **Maintainer:** JeongSik Kim
+- **Email:** jskim@ludo-lab.com
 - **Issues:** Use the repository issue tracker for data, annotation, and
   reproducibility reports.
