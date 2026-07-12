@@ -28,7 +28,7 @@ telemetry synchronization, phase windows, and fault timelines. It is designed
 for audio-only ASD, multichannel fusion, audio-plus-process-context modeling,
 temporal event detection, and future cross-build domain-generalization studies.
 
-> **Dataset download:** [Zenodo record — replace with final link]([10.5281/zenodo.21313911])
+> **Dataset download:** [Zenodo record]([10.5281/zenodo.21313911])
 
 ## Why 3D-printer sound?
 
@@ -304,7 +304,7 @@ Operating-Sound Dataset for Anomalous Sound Detection (Version 0.4.1)
 Associated paper:
 
 ```text
-[AUTHORS]. “[PAPER TITLE].” [VENUE], [YEAR]. https://doi.org/[PAPER_DOI]
+[Pending]
 ```
 
 ## Voron platform attribution
