@@ -1,20 +1,9 @@
-<!--
-PRE-PUBLICATION CHECK
-Replace these placeholders before making the repository public:
-[ZENODO_DOI], [ZENODO_RECORD_URL], [PAPER_DOI_OR_URL], [GITHUB_OWNER],
-[CONTACT_NAME], [CONTACT_EMAIL], and [FINAL_LICENSE].
-
-Do not commit the large WAV archives to this repository unless that is an
-intentional storage decision. The README assumes that the data release is
-hosted on Zenodo and that GitHub hosts documentation, metadata, and code.
--->
-
 # ASD3DP
 
 **A real-world four-channel 3D-printer operating-sound dataset for anomalous sound detection**
 
 <!-- Add after Zenodo publication:
-[![DOI](https://zenodo.org/badge/DOI/[ZENODO_DOI].svg)](https://doi.org/[ZENODO_DOI])
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21313911.svg)](https://doi.org/10.5281/zenodo.21313911)
 -->
 
 ASD3DP is an audio-centered dataset for anomalous sound detection (ASD) and
@@ -289,7 +278,7 @@ environment.
 3. Read the release notes and dataset card.
 4. Use the manifests rather than inferring labels from directory names alone.
 5. Keep train, validation, and test sets session-disjoint.
-
+<!--
 ## Citation
 
 After the Zenodo record is public, replace the placeholder below and update
@@ -300,7 +289,7 @@ After the Zenodo record is public, replace the placeholder below and update
 Operating-Sound Dataset for Anomalous Sound Detection (Version 0.4.1)
 [Data set]. Zenodo. https://doi.org/[ZENODO_DOI]
 ```
-
+-->
 Associated paper:
 
 ```text
