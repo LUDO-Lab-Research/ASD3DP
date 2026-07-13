@@ -58,7 +58,7 @@ four microphones.
 | Group | Top-level class | Sessions | Duration | Clips |
 |---|---|---:|---:|---:|
 | Loose A, B, or A+B belt conditions | Soft anomaly | 12 | 6.96 h | 2,352 |
-| Extruder cogging or no extrusion | Hard anomaly | 6 | 3.06 h | 1,052 |
+| Extruder cogging or no extrusion | Soft anomaly | 6 | 3.06 h | 1,052 |
 | Toolhead collision/crash | Hard anomaly | 4 | 4.97 h | 897 |
 
 ## Label definitions
@@ -66,8 +66,8 @@ four microphones.
 - **Normal:** expected operation for the current print or motion state.
 - **Soft anomaly:** degradation or instability that may allow continued
   operation but increases quality loss or failure risk.
-- **Hard anomaly:** severe extrusion/feed failure, collision, or another
-  condition associated with immediate interruption, invalid output, or damage risk.
+- **Hard anomaly:** collision or near-catastrophic condition associated with
+  immediate interruption, invalid output, or damage risk.
 
 Labels reflect operational consequence rather than sound level.
 

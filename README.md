@@ -126,16 +126,16 @@ Current soft-anomaly conditions include:
 
 - loose A belt;
 - loose B belt;
-- loose A+B belts.
+- loose A+B belts;
+- extruder cogging or no extrusion.
 
 ### Hard anomaly
 
 A catastrophic or near-catastrophic event associated with immediate collision,
 process interruption, print invalidation, or mechanical-damage risk.
 
-Current hard-anomaly conditions include:
+The current hard-anomaly class is:
 
-- extruder cogging or no extrusion;
 - toolhead collision/crash.
 
 See [`docs/ANNOTATION_PROTOCOL.md`](docs/ANNOTATION_PROTOCOL.md) for the label
