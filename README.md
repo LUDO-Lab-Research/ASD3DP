@@ -17,7 +17,7 @@ telemetry synchronization, phase windows, and fault timelines. It is designed
 for audio-only ASD, multichannel fusion, audio-plus-process-context modeling,
 temporal event detection, and future cross-build domain-generalization studies.
 
-> **Dataset download:** [Zenodo record]([10.5281/zenodo.21313911])
+> **Dataset download:** [[Temporary Google Drive](https://drive.google.com/drive/folders/1KcSe3y6K33YjB2NMadTsnkD7ZXzqbcQv?usp=sharing)]
 
 ## Why 3D-printer sound?
 
