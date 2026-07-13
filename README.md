@@ -31,7 +31,7 @@ audio-based condition monitoring.
 
 ## Dataset at a glance
 
-| Property | ASD3DP v0.4.1 |
+| Property | ASD3DP |
 |---|---:|
 | Printer | Unenclosed Voron 0.2-class FFF printer |
 | Recording interface | Zoom AMS-44 |
@@ -43,13 +43,13 @@ audio-based condition monitoring.
 | Nominal audio bit rate | 768 kb/s per mono session-channel WAV |
 | Recording sessions | 41 |
 | Session-channel WAV files | 164 |
-| Unique printer-operation duration | 28.90 h |
-| Four-channel summed duration | 115.58 channel-hours |
-| Selected event-clean clips | 8,995 × 10 s |
-| Selected-clip duration | 24.99 h |
+| Unique printer-operation duration | 28.99 h |
+| Four-channel summed duration | 115.97 channel-hours |
+| Selected event-clean clips | 9,067 × 10 s |
+| Selected-clip duration | 25.19 h |
 
-Use `audio_channels.csv` as the authoritative mapping between microphone
-position and numeric channel identifier.
+Use `annotations/session/audio_channels.csv` as the authoritative mapping
+between microphone position and numeric channel identifier.
 
 ## Recording layout
 
@@ -73,32 +73,32 @@ printer side.
 
 | Partition | Sessions | Unique duration | Selected 10 s clips | Selected-clip duration |
 |---|---:|---:|---:|---:|
-| Normal | 19 | 13.96 h | 4,779 | 13.28 h |
-| Anomaly | 22 | 14.93 h | 4,216 | 11.71 h |
-| **Total** | **41** | **28.90 h** | **8,995** | **24.99 h** |
+| Normal | 19 | 14.01 h | 4,766 | 13.24 h |
+| Anomaly | 22 | 14.98 h | 4,301 | 11.95 h |
+| **Total** | **41** | **28.99 h** | **9,067** | **25.19 h** |
 
 ### Anomaly-family distribution
 
 | Anomaly family | Sessions | Unique duration | Selected 10 s clips | Selected-clip duration |
 |---|---:|---:|---:|---:|
-| Belt tension | 12 | 6.92 h | 2,330 | 6.47 h |
-| Extruder failure / nozzle obstruction | 6 | 3.05 h | 990 | 2.75 h |
-| Toolhead collision | 4 | 4.97 h | 896 | 2.49 h |
+| Belt tension | 12 | 6.96 h | 2,352 | 6.53 h |
+| Extruder cogging or no extrusion | 6 | 3.06 h | 1,052 | 2.92 h |
+| Toolhead collision | 4 | 4.97 h | 897 | 2.49 h |
 
 ### Operating-domain distribution
 
 | State | Process domain | Condition | Speed or protocol | Sessions | Duration | Clips | Clip duration |
 |---|---|---|---|---:|---:|---:|---:|
-| Normal | Printing | Loaded | Slow | 12 | 10.56 h | 3,587 | 9.96 h |
+| Normal | Printing | Loaded | Slow | 12 | 10.61 h | 3,574 | 9.93 h |
 | Normal | Printing | Loaded | Fast | 3 | 1.44 h | 505 | 1.40 h |
 | Normal | Motion only | No filament | Slow | 1 | 0.75 h | 264 | 0.73 h |
 | Normal | Motion only | No filament | Fast | 3 | 1.21 h | 423 | 1.18 h |
-| Anomaly | Printing/extrusion | Extruder failure | Blocked path | 2 | 0.92 h | 288 | 0.80 h |
-| Anomaly | Printing/extrusion | Extruder failure | G-code protocol, slow | 1 | 0.85 h | 265 | 0.74 h |
-| Anomaly | Printing/extrusion | Extruder failure | G-code protocol, fast | 3 | 1.50 h | 437 | 1.21 h |
-| Anomaly | Motion only | Belt tension | Slow | 3 | 2.56 h | 881 | 2.45 h |
-| Anomaly | Motion only | Belt tension | Fast | 9 | 4.36 h | 1,449 | 4.03 h |
-| Anomaly | Motion only | Toolhead collision | G-code protocol | 4 | 4.97 h | 896 | 2.49 h |
+| Anomaly | Printing/extrusion | Extruder failure | Blocked path | 2 | 0.91 h | 294 | 0.82 h |
+| Anomaly | Printing/extrusion | Extruder failure | G-code protocol, slow | 1 | 0.79 h | 282 | 0.78 h |
+| Anomaly | Printing/extrusion | Extruder failure | G-code protocol, fast | 3 | 1.35 h | 476 | 1.32 h |
+| Anomaly | Motion only | Belt tension | Slow | 3 | 2.56 h | 900 | 2.50 h |
+| Anomaly | Motion only | Belt tension | Fast | 9 | 4.39 h | 1,452 | 4.03 h |
+| Anomaly | Motion only | Toolhead collision | G-code protocol | 4 | 4.97 h | 897 | 2.49 h |
 
 “Slow” and “fast” are session-level collection descriptors. Actual motion and
 extrusion speed can vary within a session; use the synchronized telemetry for
@@ -128,7 +128,7 @@ Current soft-anomaly conditions include:
 - loose A belt;
 - loose B belt;
 - loose A+B belts;
-- extruder failure, partial nozzle obstruction, or developing clog conditions.
+- extruder cogging or no extrusion.
 
 ### Hard anomaly
 
@@ -154,25 +154,21 @@ and its surrounding environment.
 
 ```text
 ASD3DP/
-├── all/
-│   ├── audio/                         # complete session-level audio view
-│   ├── gcode/                         # public G-code files
-│   ├── audio_gcode_sync/
-│   │   └── by_session/                # per-session audio/G-code alignment
-│   ├── telemetry_sync/
-│   │   └── by_session/                # per-session synchronized telemetry
-│   └── label_timeline/                # session phase/fault timelines
-├── minimum/
-│   ├── audio/                         # compact core session-level audio view
-│   ├── gcode_annotation/              # compact aligned annotations
-│   └── gcode_only_annotations/        # timing-only reduced annotations
-├── clipped/
-│   ├── audio_event_clean/
-│   │   ├── normal/                    # selected normal 10 s clips
-│   │   └── anomaly/                   # selected anomalous 10 s clips
-│   └── annotations/
-│       └── fault_mode_pulse_candidate_labeling.csv
-└── metadata and manifest CSV files
+├── session/
+│   ├── normal/                        # normal session-channel WAV files
+│   └── anomaly/                       # anomaly session-channel WAV files
+├── clip/
+│   ├── normal/                        # selected normal 10 s clips
+│   └── anomaly/                       # selected anomalous 10 s clips
+└── annotations/
+    ├── session/                       # session metadata and synchronized timelines
+    │   ├── gcode/                     # source G-code files and index
+    │   ├── audio_gcode_sync/          # compact G-code context
+    │   ├── audio_gcode_sync_full/     # full timed source G-code
+    │   ├── audio_gcode_macro/         # logical macro commands
+    │   ├── telemetry_sync/            # synchronized telemetry
+    │   └── time_aligned_labels/       # detailed process labels
+    └── clip/                          # clip labels, telemetry, and G-code context
 ```
 
 Important metadata files include:
@@ -194,6 +190,12 @@ Important metadata files include:
 - `material_filament.csv`
 - `firmware_software_summary.csv`
 - `model_source.csv`
+
+Session-level files are under `annotations/session/`; clip-level files are
+under `annotations/clip/`. The release additionally includes full timed G-code,
+logical macro commands, synchronized telemetry, fault-active intervals,
+human-reviewed collision intervals, clip telemetry, full clip G-code, and clip
+process timelines.
 
 The rule-based `fault_mode_pulse_candidate_labeling.csv` intervals are
 diagnostic candidates. They should not automatically be treated as equivalent
@@ -230,19 +232,14 @@ Recommended reporting includes:
 
 ## Baseline
 
-The current baseline study evaluates **only the official DCASE 2025 Task 2
-autoencoder baseline**. No results from additional architectures are claimed for
-ASD3DP v0.4.1.
-
-- DCASE 2025 Task 2:  
-  https://dcase.community/challenge2025/task-first-shot-unsupervised-anomalous-sound-detection-for-machine-condition-monitoring
-
-Add the exact implementation commit, channel-handling strategy, split,
-normalization, seeds, AUC, and pAUC here when the experiment record is final.
+The associated study reports a DCASE-style autoencoder baseline and a submitted
+frozen-SSLAM nearest-neighbor system. Internal experiment directory identifiers
+are not used as public system names.
 
 ## Limitations
 
-- Version 0.4.1 contains one printer build and one primary microphone geometry.
+- The current release contains one printer build and one primary microphone
+  geometry.
 - Controlled faults may not span the full variability of naturally developing
   field failures.
 - “Slow” and “fast” are session-level descriptors rather than constant
@@ -286,7 +283,7 @@ After the Zenodo record is public, replace the placeholder below and update
 
 ```text
 [CREATORS] ([YEAR]). ASD3DP: A Real-World Four-Channel 3D-Printer
-Operating-Sound Dataset for Anomalous Sound Detection (Version 0.4.1)
+Operating-Sound Dataset for Anomalous Sound Detection
 [Data set]. Zenodo. https://doi.org/[ZENODO_DOI]
 ```
 -->
