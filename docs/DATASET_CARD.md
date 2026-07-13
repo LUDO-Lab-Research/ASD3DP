@@ -1,4 +1,4 @@
-# ASD3DP v0.4.1 Dataset Card
+# ASD3DP Dataset Card
 
 ## Dataset summary
 
@@ -21,10 +21,9 @@ toolhead. Their acoustic signatures depend on process phase and operating
 condition. A useful ASD benchmark should therefore capture both mechanical
 anomalies and the operational context needed to interpret them.
 
-## Version
+## Release metadata
 
 - Dataset: ASD3DP
-- Version: 0.4.1
 - Release status: [DRAFT / PUBLIC]
 - Zenodo DOI: [ZENODO_DOI]
 - Associated paper: [PAPER_DOI_OR_URL]
@@ -47,28 +46,28 @@ anomalies and the operational context needed to interpret them.
 
 | Partition | Sessions | Unique duration | 10 s clips | Clip duration |
 |---|---:|---:|---:|---:|
-| Normal | 19 | 13.96 h | 4,779 | 13.28 h |
-| Anomaly | 22 | 14.93 h | 4,216 | 11.71 h |
-| Total | 41 | 28.90 h | 8,995 | 24.99 h |
+| Normal | 19 | 14.01 h | 4,766 | 13.24 h |
+| Anomaly | 22 | 14.98 h | 4,301 | 11.95 h |
+| Total | 41 | 28.99 h | 9,067 | 25.19 h |
 
-There are 164 session-channel WAV files and 115.58 channel-hours across the
+There are 164 session-channel WAV files and 115.97 channel-hours across the
 four microphones.
 
 ## Anomaly groups
 
 | Group | Top-level class | Sessions | Duration | Clips |
 |---|---|---:|---:|---:|
-| Loose A, B, or A+B belt conditions | Soft anomaly | 12 | 6.92 h | 2,330 |
-| Extruder failure / partial nozzle obstruction | Soft anomaly | 6 | 3.05 h | 990 |
-| Toolhead collision/crash | Hard anomaly | 4 | 4.97 h | 896 |
+| Loose A, B, or A+B belt conditions | Soft anomaly | 12 | 6.96 h | 2,352 |
+| Extruder cogging or no extrusion | Hard anomaly | 6 | 3.06 h | 1,052 |
+| Toolhead collision/crash | Hard anomaly | 4 | 4.97 h | 897 |
 
 ## Label definitions
 
 - **Normal:** expected operation for the current print or motion state.
 - **Soft anomaly:** degradation or instability that may allow continued
   operation but increases quality loss or failure risk.
-- **Hard anomaly:** collision or near-catastrophic condition associated with
-  immediate interruption, invalid output, or damage risk.
+- **Hard anomaly:** severe extrusion/feed failure, collision, or another
+  condition associated with immediate interruption, invalid output, or damage risk.
 
 Labels reflect operational consequence rather than sound level.
 
@@ -140,7 +139,7 @@ the associated baseline study. Additional architectures remain future work.
 
 ## Known limitations
 
-1. One printer build in v0.4.1.
+1. One printer build.
 2. One primary four-microphone geometry.
 3. Limited set of fault families.
 4. Some faults are deliberately induced.

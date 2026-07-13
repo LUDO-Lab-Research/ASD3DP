@@ -1,4 +1,4 @@
-# GitHub Release Checklist — ASD3DP v0.4.1
+# GitHub Release Checklist — ASD3DP
 
 ## Repository metadata
 
@@ -15,8 +15,7 @@
 - [ ] ORCIDs and affiliations are verified.
 - [ ] Zenodo DOI is inserted after reservation/publication.
 - [ ] Associated paper DOI is linked when available.
-- [ ] Version is `0.4.1` everywhere.
-- [ ] Git tag is `v0.4.1`.
+- [ ] Release metadata is consistent across Zenodo and GitHub.
 
 ## Rights and privacy
 
@@ -31,9 +30,9 @@
 
 - [ ] 41 sessions are present.
 - [ ] 164 session-channel WAV files are present.
-- [ ] 28.90 h unique duration is reproduced.
-- [ ] 115.58 channel-hours is reproduced.
-- [ ] 4,779 normal and 4,216 anomaly clips are reproduced.
+- [ ] 28.99 h unique duration is reproduced.
+- [ ] 115.97 channel-hours is reproduced.
+- [ ] 4,766 normal and 4,301 anomaly clips are reproduced.
 - [ ] 48 kHz and nominal 768 kb/s values are checked against WAV headers.
 - [ ] Channel-position mapping is checked against `audio_channels.csv`.
 - [ ] Every manifest path resolves on a case-sensitive system.

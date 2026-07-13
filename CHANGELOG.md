@@ -2,15 +2,15 @@
 
 All notable dataset and repository changes should be documented here.
 
-## [0.4.1] — [YYYY-MM-DD]
+## Current documented dataset state
 
 ### Added
 
 - 41 four-channel recording sessions.
 - 164 session-channel WAV files.
-- 28.90 h of unique printer operation.
-- 115.58 channel-hours.
-- 8,995 selected event-clean 10-second clips.
+- 28.99 h of unique printer operation.
+- 115.97 channel-hours.
+- 9,067 selected event-clean 10-second clips.
 - Normal loaded-printing and no-filament motion-only conditions.
 - Belt-tension, extruder-failure/nozzle-obstruction, and toolhead-collision
   anomaly conditions.

@@ -56,5 +56,5 @@ A pull request should contain:
 - a clear purpose;
 - changed files and expected effect;
 - validation steps;
-- compatibility notes for ASD3DP v0.4.1;
+- compatibility notes for the current documented release;
 - updated documentation or changelog entry when needed.

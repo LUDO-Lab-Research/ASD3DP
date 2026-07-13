@@ -17,7 +17,7 @@ telemetry synchronization, phase windows, and fault timelines. It is designed
 for audio-only ASD, multichannel fusion, audio-plus-process-context modeling,
 temporal event detection, and future cross-build domain-generalization studies.
 
-> **Dataset download:** [[Temporary Google Drive](https://drive.google.com/drive/folders/1KcSe3y6K33YjB2NMadTsnkD7ZXzqbcQv?usp=sharing)]
+> **Dataset download:** [Temporary Google Drive](https://drive.google.com/drive/folders/1KcSe3y6K33YjB2NMadTsnkD7ZXzqbcQv?usp=sharing)
 
 ## Why 3D-printer sound?
 
@@ -93,9 +93,8 @@ printer side.
 | Normal | Printing | Loaded | Fast | 3 | 1.44 h | 505 | 1.40 h |
 | Normal | Motion only | No filament | Slow | 1 | 0.75 h | 264 | 0.73 h |
 | Normal | Motion only | No filament | Fast | 3 | 1.21 h | 423 | 1.18 h |
-| Anomaly | Printing/extrusion | Extruder failure | Blocked path | 2 | 0.91 h | 294 | 0.82 h |
-| Anomaly | Printing/extrusion | Extruder failure | G-code protocol, slow | 1 | 0.79 h | 282 | 0.78 h |
-| Anomaly | Printing/extrusion | Extruder failure | G-code protocol, fast | 3 | 1.35 h | 476 | 1.32 h |
+| Anomaly | Printing/extrusion | Extruder failure | Observed blocked path | 2 | 0.91 h | 294 | 0.82 h |
+| Anomaly | Printing/extrusion | Extruder failure | G-code-based simulation | 4 | 2.15 h | 758 | 2.11 h |
 | Anomaly | Motion only | Belt tension | Slow | 3 | 2.56 h | 900 | 2.50 h |
 | Anomaly | Motion only | Belt tension | Fast | 9 | 4.39 h | 1,452 | 4.03 h |
 | Anomaly | Motion only | Toolhead collision | G-code protocol | 4 | 4.97 h | 897 | 2.49 h |
@@ -127,16 +126,16 @@ Current soft-anomaly conditions include:
 
 - loose A belt;
 - loose B belt;
-- loose A+B belts;
-- extruder cogging or no extrusion.
+- loose A+B belts.
 
 ### Hard anomaly
 
 A catastrophic or near-catastrophic event associated with immediate collision,
 process interruption, print invalidation, or mechanical-damage risk.
 
-The current hard-anomaly class is:
+Current hard-anomaly conditions include:
 
+- extruder cogging or no extrusion;
 - toolhead collision/crash.
 
 See [`docs/ANNOTATION_PROTOCOL.md`](docs/ANNOTATION_PROTOCOL.md) for the label
@@ -154,12 +153,12 @@ and its surrounding environment.
 
 ```text
 ASD3DP/
-├── session/
-│   ├── normal/                        # normal session-channel WAV files
-│   └── anomaly/                       # anomaly session-channel WAV files
-├── clip/
-│   ├── normal/                        # selected normal 10 s clips
-│   └── anomaly/                       # selected anomalous 10 s clips
+├── all/
+│   └── audio/files/                   # full session-channel WAV files
+├── clipped/
+│   └── audio_event_clean/             # selected 10 s clips
+│       ├── normal/
+│       └── anomaly/
 └── annotations/
     ├── session/                       # session metadata and synchronized timelines
     │   ├── gcode/                     # source G-code files and index
@@ -238,7 +237,7 @@ are not used as public system names.
 
 ## Limitations
 
-- The current release contains one printer build and one primary microphone
+- The dataset contains one printer build and one primary microphone
   geometry.
 - Controlled faults may not span the full variability of naturally developing
   field failures.
@@ -270,7 +269,7 @@ environment.
 
 ## Download and integrity
 
-1. Download the dataset from the Zenodo record.
+1. Download the dataset archives from the temporary Google Drive folder.
 2. Verify the supplied checksums.
 3. Read the release notes and dataset card.
 4. Use the manifests rather than inferring labels from directory names alone.

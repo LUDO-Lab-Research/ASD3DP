@@ -48,24 +48,22 @@ domain-generalization
 
 ## Social-preview supporting text
 
-> 41 sessions · 28.90 h unique operation · 115.58 channel-hours · 8,995 event-clean clips · audio, G-code, telemetry, and temporal annotations
+> 41 sessions · 28.99 h unique operation · 115.97 channel-hours · 9,067 event-clean clips · audio, G-code, telemetry, and temporal annotations
 
 GitHub recommends a social-preview image of at least 640 × 320 px and
 1280 × 640 px for best display. A solid background is the safest choice across
 light and dark sharing contexts.
 
-## Recommended initial release
+## Recommended release settings
 
-- **Tag:** `v0.4.1`
-- **Release title:** `ASD3DP v0.4.1 — Initial Public Dataset Release`
 - **Mark as latest:** Yes
 - **Pre-release:** No, after all checks are complete
 
 ### Release summary
 
-ASD3DP v0.4.1 provides 41 four-channel recording sessions, 164
-session-channel WAV files, 28.90 hours of unique printer operation, 115.58
-channel-hours, and 8,995 selected event-clean 10-second clips. It includes
+ASD3DP provides 41 four-channel recording sessions, 164 session-channel WAV
+files, 28.99 hours of unique printer operation, 115.97 channel-hours, and
+9,067 selected event-clean 10-second clips. It includes
 normal loaded-printing and no-filament motion-only conditions, together with
 belt-tension, extruder-failure/nozzle-obstruction, and toolhead-collision
 anomaly conditions. The release also includes G-code, audio/G-code alignment,
