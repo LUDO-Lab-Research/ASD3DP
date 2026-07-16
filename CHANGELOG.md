@@ -2,6 +2,16 @@
 
 All notable dataset and repository changes should be documented here.
 
+## v0.4.3 annotation bundle
+
+- Uses the canonical `v0.4.1_locked` synchronization basis.
+- Adds or rebuilds derived annotation resources without changing the released
+  audio or the soft/hard severity taxonomy.
+- Keeps belt-tension and extruder cogging/no-extrusion conditions as
+  `soft-anomaly`.
+- Keeps toolhead collision as the only `hard-anomaly` fault mode in this
+  release.
+
 ## Current documented dataset state
 
 ### Added

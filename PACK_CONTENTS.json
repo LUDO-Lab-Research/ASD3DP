@@ -1,57 +1,76 @@
 {
-  "package": "ASD3DP_v0.4.1_GitHub_repository_pack",
+  "schema_version": "1.0",
+  "package": "ASD3DP_GitHub_repository_pack",
+  "annotation_bundle": {
+    "version": "asd3dp_v0.4.3_public_annotation_bundle",
+    "canonical_sync_basis": "v0.4.1_locked",
+    "canonical_sync_sha256": "ac7fa228978a35526fa2aa72a28edc35d1df2427e6f71001ba833cd14b6e27a0"
+  },
   "files": [
     {
-      "path": ".github/ISSUE_TEMPLATE/data_issue.yml",
-      "bytes": 1898
-    },
-    {
-      "path": ".github/pull_request_template.md",
-      "bytes": 687
-    },
-    {
-      "path": ".gitignore",
-      "bytes": 407
-    },
-    {
       "path": "CHANGELOG.md",
-      "bytes": 877
+      "bytes": 1268,
+      "sha256": "cdd17f00935b77e79c59d2dda87323fe9bbbeb833c086ccfa3688b4b82855a8a"
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1279
+      "bytes": 1279,
+      "sha256": "3a643b418b4ba5b769d4d64c3b24b0c354e98a5b8c7272a389b7fe56705beb17"
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 1792
+      "bytes": 1809,
+      "sha256": "25712a65b12d95148c086224d9a980f1a27d4073ab9c66396b36c61b0f9b994b"
     },
     {
       "path": "GITHUB_ABOUT.md",
-      "bytes": 2471
+      "bytes": 2373,
+      "sha256": "ef8e77f9f2752e498bbc0109c1987082d82bf703b9c817754a4a902beaa52989"
     },
     {
       "path": "LICENSE_NOTICE.md",
-      "bytes": 1184
+      "bytes": 1184,
+      "sha256": "56bb93b41aa598900368a6bcb64f059ef9be57ca3f2b63462f8b6ef93f3bb859"
     },
     {
       "path": "README.md",
-      "bytes": 13235
+      "bytes": 13503,
+      "sha256": "2f250cac2c49749eab1ce452f0baf2e55ef9ba5320efe286fa45ac8061f76739"
     },
     {
       "path": "docs/ANNOTATION_PROTOCOL.md",
-      "bytes": 5742
+      "bytes": 8377,
+      "sha256": "c80afc5bd87824840a32954ebe6194575374a441422b830e7f324ac0f434592d"
+    },
+    {
+      "path": "docs/ANNOTATION_SCHEMA.md",
+      "bytes": 6304,
+      "sha256": "dd29e7a925823cbf59ad3f689cf72c8064e4f5adfcd526436c179a876515f981"
     },
     {
       "path": "docs/DATASET_CARD.md",
-      "bytes": 6316
+      "bytes": 6820,
+      "sha256": "e29062f152915c5974deaf27bcbb77410e359b1d6d688641a7f3f57358400610"
     },
     {
       "path": "docs/RELEASE_CHECKLIST.md",
-      "bytes": 2630
+      "bytes": 2622,
+      "sha256": "4c0f29c17558efa77b845a82d0766607643394b304fd89f553884cb6b2f6c3f6"
     },
     {
       "path": "metadata/GITHUB_ZENODO_INTEGRATION.md",
-      "bytes": 1330
+      "bytes": 1330,
+      "sha256": "6d5dd609b36ece1abbed8c3a9be83e885925360d695dcd979430787e85f89a1b"
+    },
+    {
+      "path": "metadata/annotation_bundle_manifest.csv",
+      "bytes": 65540,
+      "sha256": "06204f7f82861282bc71b1d0409702c4a264c583d94cca9f93b41397ab4d3c2a"
+    },
+    {
+      "path": "metadata/annotation_bundle_sha256.txt",
+      "bytes": 47121,
+      "sha256": "3b27b366c805217c3651461c13e7393de410a03411fdcd23069967fa0ca0cafc"
     }
   ]
 }

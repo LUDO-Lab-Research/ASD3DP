@@ -27,6 +27,8 @@ anomalies and the operational context needed to interpret them.
 - Release status: [DRAFT / PUBLIC]
 - Zenodo DOI: [ZENODO_DOI]
 - Associated paper: [PAPER_DOI_OR_URL]
+- Dataset annotation bundle: `v0.4.3`
+- Canonical synchronization basis: `v0.4.1_locked`
 
 ## Recording system
 
@@ -102,8 +104,15 @@ The release includes:
 - session phase/fault timelines;
 - rule-based candidate intervals for selected non-toolhead conditions.
 
-Rule-based candidate intervals are not automatically equivalent to verified
-human event ground truth.
+The release-assigned condition class and temporal-interval authority are
+separate. Normal clips use `printing_motion_window`; belt-tension and extruder
+clips use rule-derived `gcode_rule_interval` candidates; and toolhead-collision
+clips use human-audio-reviewed `human_audio_interval` annotations. Rule-derived
+candidates are not independently verified human event ground truth.
+
+See [`ANNOTATION_SCHEMA.md`](ANNOTATION_SCHEMA.md) for the released
+`fault_mode`-to-`condition` mapping, serialized values, keys, provenance, and
+temporal-label authority.
 
 ## Intended uses
 

@@ -19,6 +19,9 @@ temporal event detection, and future cross-build domain-generalization studies.
 
 > **Dataset download:** [Temporary Google Drive](https://drive.google.com/drive/folders/1KcSe3y6K33YjB2NMadTsnkD7ZXzqbcQv?usp=sharing)
 
+- Dataset annotation bundle: `v0.4.3`
+- Canonical synchronization basis: `v0.4.1_locked`
+
 ## Why 3D-printer sound?
 
 An FFF 3D printer is a coupled mechatronic system containing stepper motors,
@@ -138,8 +141,24 @@ The current hard-anomaly class is:
 
 - toolhead collision/crash.
 
-See [`docs/ANNOTATION_PROTOCOL.md`](docs/ANNOTATION_PROTOCOL.md) for the label
-definitions, provenance fields, temporal boundaries, and confidence guidance.
+The released `fault_mode` and `condition` values map as follows:
+
+| `fault_mode` | `condition` |
+|---|---|
+| `none` | `normal` |
+| `belt_tension_abnormal` | `soft-anomaly` |
+| `extruder_cogging_or_no_extrusion` | `soft-anomaly` |
+| `toolhead_collision` | `hard-anomaly` |
+
+These release-assigned condition classes are distinct from the authority of
+their temporal intervals. Normal clips use `printing_motion_window`; belt and
+extruder clips use rule-derived `gcode_rule_interval` candidates; and toolhead
+collision clips use human-audio-reviewed `human_audio_interval` annotations.
+
+See [`docs/ANNOTATION_SCHEMA.md`](docs/ANNOTATION_SCHEMA.md) for the serialized
+values, keys, provenance fields, and temporal-label authority, and
+[`docs/ANNOTATION_PROTOCOL.md`](docs/ANNOTATION_PROTOCOL.md) for the annotation
+procedure.
 
 ## Physical recordings and controlled protocols
 
@@ -270,10 +289,13 @@ environment.
 ## Download and integrity
 
 1. Download the dataset archives from the temporary Google Drive folder.
-2. Verify the supplied checksums.
-3. Read the release notes and dataset card.
-4. Use the manifests rather than inferring labels from directory names alone.
-5. Keep train, validation, and test sets session-disjoint.
+2. Compare the annotation files with the published
+   [`annotation_bundle_manifest.csv`](metadata/annotation_bundle_manifest.csv).
+3. Verify file hashes with
+   [`annotation_bundle_sha256.txt`](metadata/annotation_bundle_sha256.txt).
+4. Read the release notes and dataset card.
+5. Use the manifests rather than inferring labels from directory names alone.
+6. Keep train, validation, and test sets session-disjoint.
 <!--
 ## Citation
 

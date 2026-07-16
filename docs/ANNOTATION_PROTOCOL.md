@@ -7,6 +7,19 @@ anomalies, event boundaries, provenance, confidence, and process context. It is
 intended to keep session-level, clip-level, G-code-aligned, and telemetry-aligned
 annotations consistent.
 
+## Released schema and version basis
+
+This protocol uses conceptual state names in explanatory prose. The released
+CSV serialization is defined in [`ANNOTATION_SCHEMA.md`](ANNOTATION_SCHEMA.md).
+The current annotation bundle is `asd3dp_v0.4.3_public_annotation_bundle`, based
+on the canonical `v0.4.1_locked` synchronization with SHA-256
+`ac7fa228978a35526fa2aa72a28edc35d1df2427e6f71001ba833cd14b6e27a0`.
+The bundle file inventory and hashes are published in the
+[`annotation_bundle_manifest.csv`](../metadata/annotation_bundle_manifest.csv)
+and
+[`annotation_bundle_sha256.txt`](../metadata/annotation_bundle_sha256.txt)
+metadata files.
+
 ## Label hierarchy
 
 ```text
@@ -29,6 +42,29 @@ state
 The lower-level labels should reflect what is supported by the protocol and
 available evidence. Do not assign a highly specific physical cause when the
 recording only establishes a broader condition.
+
+### CSV serialization
+
+The conceptual state names and their serialized CSV `condition` values are:
+
+| Conceptual state | CSV `condition` value |
+|---|---|
+| `normal` | `normal` |
+| `soft_anomaly` | `soft-anomaly` |
+| `hard_anomaly` | `hard-anomaly` |
+
+Consumers should use the serialized values when parsing the released files.
+The release-assigned severity mapping is:
+
+| CSV `fault_mode` | CSV `condition` |
+|---|---|
+| `none` | `normal` |
+| `belt_tension_abnormal` | `soft-anomaly` |
+| `extruder_cogging_or_no_extrusion` | `soft-anomaly` |
+| `toolhead_collision` | `hard-anomaly` |
+
+In the current release, `extruder_cogging_or_no_extrusion` is a soft anomaly,
+and `toolhead_collision` is the only hard-anomaly fault mode.
 
 ## Top-level definitions
 
@@ -90,6 +126,11 @@ Use the existing release schema where available. The conceptual minimum is:
 Map these concepts onto the actual CSV column names rather than creating
 duplicate fields without need.
 
+The v0.4.3 annotation CSV files do not provide an explicit per-event
+`confidence` column. Fields such as `annotation_authority`, `event_evidence`,
+`source`, and `condition_source_type` record provenance or generation basis;
+they are not calibrated confidence scores.
+
 ## Temporal boundaries
 
 Where the event has a gradual onset, distinguish:
@@ -100,6 +141,24 @@ Where the event has a gradual onset, distinguish:
 
 If the release schema contains only one start boundary, use the clear onset and
 record earlier ambiguous evidence in notes.
+
+### Released temporal-label authority
+
+The release-assigned condition class and the authority of its temporal interval
+are separate properties:
+
+| `fault_mode` | `condition` | Released temporal authority |
+|---|---|---|
+| `none` | `normal` | `printing_motion_window` |
+| `belt_tension_abnormal` | `soft-anomaly` | `gcode_rule_interval` |
+| `extruder_cogging_or_no_extrusion` | `soft-anomaly` | `gcode_rule_interval` |
+| `toolhead_collision` | `hard-anomaly` | `human_audio_interval` |
+
+Normal clips are selected from printing-motion windows. Belt-tension and
+extruder intervals are rule-derived candidates. Toolhead-collision intervals
+use human-reviewed audio intervals. Thus, for example, an extruder clip's
+release-assigned `soft-anomaly` class does not make its precise active interval
+independently verified human event ground truth.
 
 ## Provenance labels
 
@@ -119,7 +178,7 @@ Never describe controlled physical recordings as synthesized audio.
 3. Consult G-code, telemetry, phase windows, and available visual or maintenance
    evidence.
 4. Refine the boundary and label.
-5. Assign provenance and confidence.
+5. Assign provenance and, when the working schema supports it, confidence.
 6. Record ambiguities rather than forcing unsupported certainty.
 
 ## Clip labeling
@@ -136,6 +195,9 @@ The exact inclusion threshold for a clip intersecting an anomaly must be
 documented in the release code or manifest specification.
 
 ## Confidence
+
+The following is a conceptual review scale. It is not serialized as a
+per-event field in the v0.4.3 annotation CSV files.
 
 - **High:** clear audio evidence with supporting G-code, telemetry, protocol, or
   physical observation.
