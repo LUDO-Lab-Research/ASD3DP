@@ -1,0 +1,6 @@
+dcase2026_train_dirs:
+  - ./work/staging/ASD3DP/train
+dcase2026_valid_dirs:
+  - ./work/staging/ASD3DP/test
+dcase2026_eval_train_dirs: []
+dcase2026_eval_dirs: []

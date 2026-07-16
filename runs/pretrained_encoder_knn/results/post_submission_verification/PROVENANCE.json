@@ -1,0 +1,26 @@
+{
+  "artifact_kind": "post_submission_score_verification",
+  "canonical_split_sha256": "c0b95db860ace22dc7f2633e30ced5d1aab9d05b7a835fb7a594b97c997d533d",
+  "projection_source_sha256": "00da58c5e56829327b9dc1d2cd899300bcf73f6e49e90224d5acc278ddc73586",
+  "projection_config_sha256": "7949076a7c823d860c9c586d672f3039addbae8056bf67c55452779af1398c92",
+  "frozen_embedding_cache": {
+    "train": {
+      "logical_source": "run21/rear/train_temporal_ASD3DP.pkl",
+      "bytes": 589824423,
+      "sha256": "e5e805bbd004b4ad345f8469958d8f66222b07448d1ff3c83430526847b7506b"
+    },
+    "test": {
+      "logical_source": "run21/rear/valid_temporal_ASD3DP.pkl",
+      "bytes": 353894823,
+      "sha256": "bf3cd3a79d4bf9310b19952707d75ad62147dc54b6e60d9bfe5d23b476902e1c"
+    }
+  },
+  "systems": [
+    "front_only",
+    "near_only",
+    "residual_view"
+  ],
+  "rows_per_system": 600,
+  "reported_metric_match": "exact",
+  "historical_execution_output": false
+}

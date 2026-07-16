@@ -22,6 +22,9 @@ temporal event detection, and future cross-build domain-generalization studies.
 - Dataset annotation bundle: `v0.4.3`
 - Canonical synchronization basis: `v0.4.1_locked`
 
+> **Paper experiment artifacts:** exact split CSVs, audited score tables, and
+> reviewed reproduction code are available under [`runs/`](runs/).
+
 ## Why 3D-printer sound?
 
 An FFF 3D printer is a coupled mechatronic system containing stepper motors,

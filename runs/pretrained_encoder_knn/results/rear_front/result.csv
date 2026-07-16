@@ -1,0 +1,4 @@
+layer,system,machine,train_split,eval_split,auc_source,auc_target,pauc,official_score,auc,pauc_source,pauc_target,f1,f1_source,f1_target,n_scores,prps_k,projection_dim,projection_seed
+front_only,ASD3DP_Submitted_FrontOnly,ASD3DP,train,valid,,,0.8308187134502925,,0.9657333333333333,,,0.931637519872814,,,600,128,256,20260614
+near_only,ASD3DP_Run21_NearOnly_Rear,ASD3DP,train,valid,,,0.9525146198830409,,0.9873333333333333,,,0.95,,,600,128,256,20260614
+residual_view,ASD3DP_Run21_Residual_RearMinusFront,ASD3DP,train,valid,,,0.9588888888888889,,0.9895,,,0.9477234401349071,,,600,128,256,20260614

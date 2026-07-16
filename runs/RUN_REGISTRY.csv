@@ -1,0 +1,3 @@
+run_id,display_name,split_seed,model_seeds,train_rows,test_rows,status,paper_outputs
+dcase_baseline_ae,DCASE baseline AE,13711,23711;23712;23713,1000,600,validated_split_and_stored_metrics,dcase_baseline_ae/results/run20_summary_metrics.csv
+pretrained_encoder_knn,Pretrained encoder k-NN,13711,deterministic_frozen_encoder,1000,600,validated_split_reuse_and_stored_metrics;provisional_historical_source,pretrained_encoder_knn/results/run21_submitted_front_rear_table.csv

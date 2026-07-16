@@ -1,0 +1,54 @@
+dataset_name: dcase2026
+train_split: train
+eval_split: valid
+
+# Staged stereo order: rear ch1 = near (column 0), front ch2 = far (column 1).
+input_type: near
+different_view: fixed_residual_view
+fixed_residual_alpha: 0.5
+residual_alpha: 0.5
+top_k: 1
+temporal_pooling: true
+cache_only: true
+
+# ASD3DP Run 21 has no source/target split. MemMix and PRPS are disabled.
+n_mix_support: 0
+alpha: 0.9
+memmix_alpha: 0.9
+no_wandb: true
+
+cache_models:
+  - model_name: sslam
+    pretrained_model_dir: ./transformer-ssl-asd/sslam
+
+cache_root_template: cache_memory/train_features_{model_name}_inputnear_differentview_pair
+score_dir: out/run21_scores
+score_csv: out/run21_scores.csv
+write_submission: false
+decision_q: 0.95
+
+systems:
+  - system_id: front_only
+    label: ASD3DP_Submitted_FrontOnly
+    mode: far
+    encoders:
+      - slug: sslam_l12
+        display: SSLAM L12
+        model_name: sslam
+        layer: 12
+  - system_id: near_only
+    label: ASD3DP_Run21_NearOnly_Rear
+    mode: near
+    encoders:
+      - slug: sslam_l12
+        display: SSLAM L12
+        model_name: sslam
+        layer: 12
+  - system_id: residual_view
+    label: ASD3DP_Run21_Residual_RearMinusFront
+    mode: residual
+    encoders:
+      - slug: sslam_l12
+        display: SSLAM L12
+        model_name: sslam
+        layer: 12

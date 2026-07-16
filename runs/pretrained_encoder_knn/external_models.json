@@ -1,0 +1,10 @@
+{
+  "model": "SSLAM_pretrain",
+  "repository": "https://huggingface.co/ta012/SSLAM_pretrain",
+  "upstream_code": "https://github.com/ta012/SSLAM",
+  "license": "MIT",
+  "checkpoint_file": "SSLAM_pretrain/model.safetensors",
+  "checkpoint_sha256": "8ec670adb241c710422ddd894ff1bade142ef0b25cf1ee68577aa45f89432298",
+  "use": "frozen layer-12 embeddings",
+  "vendored": false
+}

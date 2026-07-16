@@ -1,0 +1,17 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+numpy>=1.24,<2.0
+pandas
+scipy
+scikit-learn
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+tqdm
+pyyaml
+soundfile
+transformers>=4.40,<5
+safetensors
+huggingface_hub
+timm
+einops

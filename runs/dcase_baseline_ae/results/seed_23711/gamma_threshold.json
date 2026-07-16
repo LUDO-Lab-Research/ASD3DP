@@ -1,0 +1,11 @@
+{
+  "fit_scores": "final_epoch_train_normal_batch_reconstruction_mse",
+  "validation_scores_included": false,
+  "quantile": 0.9,
+  "shape": 0.32591594520930167,
+  "location": 12.310381889343258,
+  "scale": 1.943110838691692,
+  "threshold": 14.15827394161571,
+  "score_count": 913,
+  "smoke_only": false
+}

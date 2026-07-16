@@ -1,0 +1,5 @@
+runs/**/public_reproduction/work/
+runs/**/public_reproduction/external/
+runs/**/__pycache__/
+runs/**/*.pyc
+.pytest_cache/

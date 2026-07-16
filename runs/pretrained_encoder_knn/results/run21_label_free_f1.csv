@@ -1,0 +1,7 @@
+config,cache_machine,system_id,system,decision_quantile,threshold,train_score_count,test_score_count,predicted_anomaly_count,precision,recall,f1
+config/run21_asd3dp.yaml,ASD3DP,near_only,ASD3DP_Run21_NearOnly_Rear,0.95,1.833893060684204,1000,600,322,0.906832298136646,0.9733333333333334,0.9389067524115756
+config/run21_asd3dp.yaml,ASD3DP,residual_view,ASD3DP_Run21_Residual_RearMinusFront,0.95,1.714648962020874,1000,600,316,0.9177215189873418,0.9666666666666667,0.9415584415584416
+config/run21_right_near.yaml,ASD3DP_right_near,right_near_only,ASD3DP_Run21_NearOnly_Right,0.95,2.049494504928589,1000,600,254,0.9409448818897638,0.7966666666666666,0.8628158844765343
+config/run21_right_near.yaml,ASD3DP_right_near,right_residual,ASD3DP_Run21_Residual_RightMinusFront,0.95,1.9008876085281372,1000,600,240,0.9458333333333333,0.7566666666666667,0.8407407407407408
+config/run21_left_near.yaml,ASD3DP_left_near,left_near_only,ASD3DP_Run21_NearOnly_Left,0.95,2.0137076377868652,1000,600,305,0.9245901639344263,0.94,0.9322314049586777
+config/run21_left_near.yaml,ASD3DP_left_near,left_residual,ASD3DP_Run21_Residual_LeftMinusFront,0.95,1.8422001600265503,1000,600,316,0.9113924050632911,0.96,0.935064935064935

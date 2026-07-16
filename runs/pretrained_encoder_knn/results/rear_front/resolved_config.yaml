@@ -1,0 +1,40 @@
+train_split: train
+eval_split: valid
+cache_root_template: cache_memory/train_features_{model_name}_inputnear_differentview_pair
+residual_alpha: 0.5
+memmix_alpha: 0.9
+n_mix_support: 0
+prps_k: 128
+projection_dim: 256
+projection_seed: 20260614
+decision_q: 0.95
+write_submission: false
+submission_dir: null
+debug_prps: false
+score_dir: out/run21_scores
+score_csv: out/run21_scores.csv
+systems:
+- system_id: front_only
+  label: ASD3DP_Submitted_FrontOnly
+  mode: far
+  encoders:
+  - slug: sslam_l12
+    display: SSLAM L12
+    model_name: sslam
+    layer: 12
+- system_id: near_only
+  label: ASD3DP_Run21_NearOnly_Rear
+  mode: near
+  encoders:
+  - slug: sslam_l12
+    display: SSLAM L12
+    model_name: sslam
+    layer: 12
+- system_id: residual_view
+  label: ASD3DP_Run21_Residual_RearMinusFront
+  mode: residual
+  encoders:
+  - slug: sslam_l12
+    display: SSLAM L12
+    model_name: sslam
+    layer: 12

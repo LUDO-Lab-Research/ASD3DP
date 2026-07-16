@@ -1,0 +1,84 @@
+{
+  "status": "TRAIN_AND_TEST_SPLITS_VALIDATED",
+  "source_manifest_sha256": "744537e34b2e51b993b23fbed6d029cb4d901562718e3518f0ff48354f08a692",
+  "sampling_seed": 13711,
+  "channel": "ch2_front",
+  "train_rows": 1000,
+  "train_context_counts": {
+    "motion_fast_no_filament": 250,
+    "motion_slow_no_filament": 250,
+    "print_fast_loaded": 250,
+    "print_slow_loaded": 250
+  },
+  "train_session_counts": {
+    "asd3dp_s0001": 23,
+    "asd3dp_s0002": 23,
+    "asd3dp_s0003": 23,
+    "asd3dp_s0004": 23,
+    "asd3dp_s0005": 23,
+    "asd3dp_s0006": 23,
+    "asd3dp_s0007": 23,
+    "asd3dp_s0008": 23,
+    "asd3dp_s0009": 22,
+    "asd3dp_s0010": 22,
+    "asd3dp_s0011": 22,
+    "asd3dp_s0013": 125,
+    "asd3dp_s0014": 125,
+    "asd3dp_s0016": 250,
+    "asd3dp_s0017": 125,
+    "asd3dp_s0018": 125
+  },
+  "held_out_normal_sessions": [
+    "asd3dp_s0012",
+    "asd3dp_s0015",
+    "asd3dp_s0019"
+  ],
+  "train_only_normal_sessions": [
+    "asd3dp_s0016"
+  ],
+  "test_rows": 600,
+  "test_label_counts": {
+    "anomaly": 300,
+    "normal": 300
+  },
+  "test_normal_session_counts": {
+    "asd3dp_s0012": 100,
+    "asd3dp_s0015": 100,
+    "asd3dp_s0019": 100
+  },
+  "test_anomaly_fault_counts": {
+    "belt_tension_abnormal": 100,
+    "extruder_cogging_or_no_extrusion": 100,
+    "toolhead_collision": 100
+  },
+  "test_anomaly_session_counts": {
+    "asd3dp_s0020": 9,
+    "asd3dp_s0021": 9,
+    "asd3dp_s0022": 9,
+    "asd3dp_s0023": 9,
+    "asd3dp_s0024": 8,
+    "asd3dp_s0025": 8,
+    "asd3dp_s0026": 8,
+    "asd3dp_s0027": 8,
+    "asd3dp_s0028": 8,
+    "asd3dp_s0029": 8,
+    "asd3dp_s0030": 8,
+    "asd3dp_s0031": 8,
+    "asd3dp_s0032": 17,
+    "asd3dp_s0033": 17,
+    "asd3dp_s0034": 33,
+    "asd3dp_s0035": 33,
+    "asd3dp_s0036": 33,
+    "asd3dp_s0037": 1,
+    "asd3dp_s0038": 17,
+    "asd3dp_s0039": 17,
+    "asd3dp_s0040": 16,
+    "asd3dp_s0041": 16
+  },
+  "train_test_clip_uid_overlap": 0,
+  "missing_wavs": 0,
+  "test_manifest_locked": true,
+  "source_manifest_repository_path": "annotations/clip/event_clean_manifest.csv",
+  "release_version": "v0.4.1_locked",
+  "train_test_session_overlap": 0
+}

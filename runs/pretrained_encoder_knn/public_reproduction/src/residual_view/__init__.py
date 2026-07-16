@@ -1,0 +1,1 @@
+"""Residual-view utilities."""
