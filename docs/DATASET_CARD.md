@@ -28,7 +28,6 @@ anomalies and the operational context needed to interpret them.
 - Zenodo DOI: [ZENODO_DOI]
 - Associated paper: [PAPER_DOI_OR_URL]
 - Dataset annotation bundle: `v0.4.3`
-- Canonical synchronization basis: `v0.4.1_locked`
 
 ## Recording system
 

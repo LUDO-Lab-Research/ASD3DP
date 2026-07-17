@@ -10,8 +10,6 @@ does not modify or reinterpret their values.
 | Item | Value |
 |---|---|
 | Annotation bundle | `asd3dp_v0.4.3_public_annotation_bundle` |
-| Canonical synchronization basis | `v0.4.1_locked` |
-| Canonical synchronization SHA-256 | `ac7fa228978a35526fa2aa72a28edc35d1df2427e6f71001ba833cd14b6e27a0` |
 | Sessions | 41 |
 | Logical 10-second clips | 9,067 |
 | Channels | `ch1`, `ch2`, `ch3`, `ch4` |

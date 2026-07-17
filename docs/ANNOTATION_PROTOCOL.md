@@ -11,9 +11,7 @@ annotations consistent.
 
 This protocol uses conceptual state names in explanatory prose. The released
 CSV serialization is defined in [`ANNOTATION_SCHEMA.md`](ANNOTATION_SCHEMA.md).
-The current annotation bundle is `asd3dp_v0.4.3_public_annotation_bundle`, based
-on the canonical `v0.4.1_locked` synchronization with SHA-256
-`ac7fa228978a35526fa2aa72a28edc35d1df2427e6f71001ba833cd14b6e27a0`.
+The current annotation bundle is `asd3dp_v0.4.3_public_annotation_bundle`.
 The bundle file inventory and hashes are published in the
 [`annotation_bundle_manifest.csv`](../metadata/annotation_bundle_manifest.csv)
 and
