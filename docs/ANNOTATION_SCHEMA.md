@@ -3,13 +3,13 @@
 ## Scope
 
 This document describes the serialized labels, row grain, verified join
-identifiers, provenance fields, and temporal-label authority in the
-`asd3dp_v0.4.3_public_annotation_bundle`. It documents the released files; it
-does not modify or reinterpret their values.
+identifiers, provenance fields, and temporal-label authority in the ASD3DP
+v0.4.3 public dataset release. It documents the released files; it does not
+modify or reinterpret their values.
 
 | Item | Value |
 |---|---|
-| Annotation bundle | `asd3dp_v0.4.3_public_annotation_bundle` |
+| Dataset release | `v0.4.3` |
 | Sessions | 41 |
 | Logical 10-second clips | 9,067 |
 | Channels | `ch1`, `ch2`, `ch3`, `ch4` |

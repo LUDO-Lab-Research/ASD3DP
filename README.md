@@ -19,7 +19,7 @@ temporal event detection, and future cross-build domain-generalization studies.
 
 > **Dataset download:** [Temporary Google Drive](https://drive.google.com/drive/folders/1KcSe3y6K33YjB2NMadTsnkD7ZXzqbcQv?usp=sharing)
 
-- Dataset annotation bundle: `v0.4.3`
+- Public dataset release: `v0.4.3`
 
 > **Paper experiment artifacts:** exact split CSVs, audited score tables, and
 > reviewed reproduction code are available under [`runs/`](runs/).

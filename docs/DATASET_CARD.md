@@ -27,7 +27,7 @@ anomalies and the operational context needed to interpret them.
 - Release status: [DRAFT / PUBLIC]
 - Zenodo DOI: [ZENODO_DOI]
 - Associated paper: [PAPER_DOI_OR_URL]
-- Dataset annotation bundle: `v0.4.3`
+- Public dataset release: `v0.4.3`
 
 ## Recording system
 

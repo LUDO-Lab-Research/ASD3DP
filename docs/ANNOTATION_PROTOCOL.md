@@ -7,12 +7,12 @@ anomalies, event boundaries, provenance, confidence, and process context. It is
 intended to keep session-level, clip-level, G-code-aligned, and telemetry-aligned
 annotations consistent.
 
-## Released schema and version basis
+## Released schema
 
 This protocol uses conceptual state names in explanatory prose. The released
 CSV serialization is defined in [`ANNOTATION_SCHEMA.md`](ANNOTATION_SCHEMA.md).
-The current annotation bundle is `asd3dp_v0.4.3_public_annotation_bundle`.
-The bundle file inventory and hashes are published in the
+This protocol documents the annotations included in the ASD3DP v0.4.3 public
+dataset release. The annotation-file inventory and hashes are published in the
 [`annotation_bundle_manifest.csv`](../metadata/annotation_bundle_manifest.csv)
 and
 [`annotation_bundle_sha256.txt`](../metadata/annotation_bundle_sha256.txt)
