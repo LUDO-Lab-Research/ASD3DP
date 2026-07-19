@@ -18,6 +18,13 @@ for audio-only ASD, multichannel fusion, audio-plus-process-context modeling,
 temporal event detection, and future cross-build domain-generalization studies.
 
 > **Dataset download:** [Temporary Google Drive](https://drive.google.com/drive/folders/1KcSe3y6K33YjB2NMadTsnkD7ZXzqbcQv?usp=sharing)
+>
+> **Interactive synchronization demo:** [asd3dp.ludo-demo.com](https://asd3dp.ludo-demo.com)
+
+[![GitHub](https://img.shields.io/badge/GitHub-ASD3DP-181717?logo=github)](https://github.com/LUDO-Lab-Research/ASD3DP)
+![DCASE Workshop](https://img.shields.io/badge/DCASE_Workshop-submitted-2563eb)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-open-0f766e)](https://asd3dp.ludo-demo.com)
+![Zenodo](https://img.shields.io/badge/Zenodo-pending-f59e0b?logo=zenodo)
 
 - Public dataset release: `v0.4.3`
 
