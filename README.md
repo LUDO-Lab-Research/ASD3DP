@@ -2,7 +2,7 @@
 
 **A real-world four-channel 3D-printer operating-sound dataset for anomalous sound detection**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21313911.svg)](https://doi.org/10.5281/zenodo.21313911)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21313911-1682D4?logo=zenodo)](https://doi.org/10.5281/zenodo.21313911)
 
 ASD3DP is an audio-centered dataset for anomalous sound detection (ASD) and
 machine-condition monitoring in fused-filament-fabrication (FFF) 3D printing.
