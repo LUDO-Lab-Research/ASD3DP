@@ -1,11 +1,25 @@
 cff-version: 1.2.0
 message: "If you use ASD3DP, please cite the dataset using this metadata."
 type: dataset
-title: "ASD3DP: A Real-World Four-Channel 3D-Printer Operating-Sound Dataset for Anomalous Sound Detection"
-version: "0.4.1"
+title: "ASD3DP: Session- and Clip-Level Annotation Bundle for a Real-World Four-Channel 3D-Printer Anomalous Sound Dataset"
+version: "0.4.3"
 authors:
-  - family-names: "REPLACE_WITH_FAMILY_NAME"
-    given-names: "REPLACE_WITH_GIVEN_NAMES"
+  - family-names: "Kim"
+    given-names: "JeongSik"
+    affiliation: "LUDO Lab"
+    orcid: "https://orcid.org/0009-0003-2918-0586"
+  - family-names: "Sung"
+    given-names: "JongWoo"
+    affiliation: "LUDO Lab"
+  - family-names: "Bae"
+    given-names: "HyeonJun"
+    affiliation: "LUDO Lab"
+  - family-names: "Kim"
+    given-names: "BoRyeon"
+    affiliation: "LUDO Lab"
+  - family-names: "Lee"
+    given-names: "JiAn"
+    affiliation: "LUDO Lab"
 abstract: >-
   ASD3DP is an audio-centered dataset for anomalous sound detection and
   machine-condition monitoring in fused-filament-fabrication 3D printing. It
@@ -28,8 +42,8 @@ keywords:
   - domain generalization
   - Voron V0
   - DCASE
-# Add the following after publication:
-# doi: "10.5281/zenodo.XXXXXXX"
-# date-released: "YYYY-MM-DD"
-# url: "https://doi.org/10.5281/zenodo.XXXXXXX"
-# repository-code: "https://github.com/OWNER/ASD3DP"
+doi: "10.5281/zenodo.21313911"
+date-released: "2026-07-13"
+url: "https://doi.org/10.5281/zenodo.21313911"
+repository-code: "https://github.com/LUDO-Lab-Research/ASD3DP"
+license: "CC-BY-4.0"

@@ -24,8 +24,8 @@ anomalies and the operational context needed to interpret them.
 ## Release metadata
 
 - Dataset: ASD3DP
-- Release status: [DRAFT / PUBLIC]
-- Zenodo DOI: [ZENODO_DOI]
+- Release status: Public
+- Zenodo DOI: [10.5281/zenodo.21313911](https://doi.org/10.5281/zenodo.21313911)
 - Associated paper: [PAPER_DOI_OR_URL]
 - Public dataset release: `v0.4.3`
 

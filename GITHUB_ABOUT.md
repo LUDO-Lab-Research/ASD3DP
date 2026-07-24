@@ -16,9 +16,9 @@ Alternative if the name is unavailable:
 
 ## Website
 
-Use the final Zenodo DOI landing page:
+Use the Zenodo DOI landing page:
 
-`https://doi.org/[ZENODO_DOI]`
+`https://doi.org/10.5281/zenodo.21313911`
 
 ## Topics
 
@@ -78,6 +78,6 @@ telemetry synchronization, phase/fault timelines, and session/clip metadata.
 - [ ] Issues enabled
 - [ ] Discussions enabled if community support is desired
 - [ ] Social-preview image uploaded
-- [ ] `CITATION.cff` updated with creators and DOI
-- [ ] Final license added
+- [x] `CITATION.cff` updated with creators and DOI
+- [x] Final licenses added (MIT code; CC BY 4.0 data)
 - [ ] Security/safety notice visible in README

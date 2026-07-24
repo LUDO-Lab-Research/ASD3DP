@@ -6,21 +6,21 @@
 - [ ] Zenodo DOI is used as the repository website.
 - [ ] Topics are added.
 - [ ] Social-preview image is uploaded.
-- [ ] README placeholders are replaced.
+- [x] README Zenodo placeholders are replaced.
 - [ ] Maintainer contact is current.
 
 ## Citation and identifiers
 
-- [ ] `CITATION.cff` contains all creators in citation order.
+- [x] `CITATION.cff` contains all creators in citation order.
 - [ ] ORCIDs and affiliations are verified.
-- [ ] Zenodo DOI is inserted after reservation/publication.
+- [x] Zenodo DOI is inserted after publication.
 - [ ] Associated paper DOI is linked when available.
 - [ ] Release metadata is consistent across Zenodo and GitHub.
 
 ## Rights and privacy
 
-- [ ] Final license is selected.
-- [ ] `LICENSE` exists.
+- [x] Final licenses are selected (MIT code; CC BY 4.0 data).
+- [x] `LICENSE` exists.
 - [ ] Third-party files have provenance and rights records.
 - [ ] VORON attribution is present.
 - [ ] Audio has been screened for identifiable speech and private information.
@@ -64,5 +64,5 @@
 - [ ] Release notes match the changelog.
 - [ ] Clean download/extraction test passes.
 - [ ] README links work.
-- [ ] DOI badge works.
+- [x] DOI badge works.
 - [ ] Final release is not marked as a pre-release.

@@ -2,9 +2,7 @@
 
 **A real-world four-channel 3D-printer operating-sound dataset for anomalous sound detection**
 
-<!-- Add after Zenodo publication:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21313911.svg)](https://doi.org/10.5281/zenodo.21313911)
--->
 
 ASD3DP is an audio-centered dataset for anomalous sound detection (ASD) and
 machine-condition monitoring in fused-filament-fabrication (FFF) 3D printing.
@@ -17,14 +15,14 @@ telemetry synchronization, phase windows, and fault timelines. It is designed
 for audio-only ASD, multichannel fusion, audio-plus-process-context modeling,
 temporal event detection, and future cross-build domain-generalization studies.
 
-> **Dataset download:** [Temporary Google Drive](https://drive.google.com/drive/folders/1KcSe3y6K33YjB2NMadTsnkD7ZXzqbcQv?usp=sharing)
+> **Dataset download:** [Zenodo (DOI: 10.5281/zenodo.21313911)](https://doi.org/10.5281/zenodo.21313911)
 >
 > **Interactive synchronization demo:** [asd3dp.ludo-demo.com](https://asd3dp.ludo-demo.com)
 
 [![GitHub](https://img.shields.io/badge/GitHub-ASD3DP-181717?logo=github)](https://github.com/LUDO-Lab-Research/ASD3DP)
 ![DCASE Workshop](https://img.shields.io/badge/DCASE_Workshop-submitted-2563eb)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-open-0f766e)](https://asd3dp.ludo-demo.com)
-![Zenodo](https://img.shields.io/badge/Zenodo-pending-f59e0b?logo=zenodo)
+[![Zenodo](https://img.shields.io/badge/Zenodo-published-1682d4?logo=zenodo)](https://doi.org/10.5281/zenodo.21313911)
 
 - Public dataset release: `v0.4.3`
 
@@ -297,7 +295,7 @@ environment.
 
 ## Download and integrity
 
-1. Download the dataset archives from the temporary Google Drive folder.
+1. Download the dataset archives from the [Zenodo record](https://doi.org/10.5281/zenodo.21313911).
 2. Compare the annotation files with the published
    [`annotation_bundle_manifest.csv`](metadata/annotation_bundle_manifest.csv).
 3. Verify file hashes with
@@ -305,18 +303,14 @@ environment.
 4. Read the release notes and dataset card.
 5. Use the manifests rather than inferring labels from directory names alone.
 6. Keep train, validation, and test sets session-disjoint.
-<!--
 ## Citation
 
-After the Zenodo record is public, replace the placeholder below and update
-`CITATION.cff`.
-
 ```text
-[CREATORS] ([YEAR]). ASD3DP: A Real-World Four-Channel 3D-Printer
-Operating-Sound Dataset for Anomalous Sound Detection
-[Data set]. Zenodo. https://doi.org/[ZENODO_DOI]
+Kim, JeongSik; Sung, JongWoo; Bae, HyeonJun; Kim, BoRyeon; Lee, JiAn
+(2026). ASD3DP: Session- and Clip-Level Annotation Bundle for a Real-World
+Four-Channel 3D-Printer Anomalous Sound Dataset. Zenodo.
+https://doi.org/10.5281/zenodo.21313911
 ```
--->
 Associated paper:
 
 ```text
@@ -337,12 +331,15 @@ endorsed by VORON Design.
 
 ## License and third-party material
 
-**Final dataset license: `[FINAL_LICENSE]`.**
+The ASD3DP audio recordings, annotations, and dataset metadata are licensed
+under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+(CC BY 4.0). Source code and scripts original to this repository are licensed
+under the [MIT License](LICENSE).
 
-Before publication, complete a rights review for every included audio file,
-annotation, G-code file, source model, diagram, and script. Third-party G-code,
-models, software, and referenced design files remain subject to their own
-licenses even when they are distributed alongside the dataset.
+Third-party G-code, models, software, and referenced design files remain
+subject to their own licenses even when they are distributed alongside the
+dataset. The repository's MIT License does not override those terms and does
+not apply to the CC BY 4.0 dataset files.
 
 See [`LICENSE_NOTICE.md`](LICENSE_NOTICE.md).
 

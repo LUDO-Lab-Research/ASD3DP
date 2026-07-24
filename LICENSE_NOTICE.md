@@ -1,16 +1,20 @@
 # License and Rights Notice
 
-A final legal license has not yet been selected in this repository template.
+ASD3DP uses separate licenses for data and software:
 
-Before public release, replace this file with the final rights statement and add
-the appropriate `LICENSE` file. A common option for original research data and
-documentation is CC BY 4.0, but the correct choice depends on ownership,
-institutional requirements, funder requirements, and the rights attached to
-every distributed file.
+- Original audio recordings, annotations, and dataset metadata are licensed
+  under the Creative Commons Attribution 4.0 International License
+  ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+- Source code and scripts original to this repository are licensed under the
+  [MIT License](LICENSE).
 
-## Rights audit required
+The MIT License does not apply to the dataset files, and CC BY 4.0 does not
+replace license terms attached to third-party material.
 
-Review separately:
+## File-level rights
+
+The following categories may contain separate rights or license notices and
+must be evaluated at file level:
 
 - original audio recordings;
 - annotations and metadata;

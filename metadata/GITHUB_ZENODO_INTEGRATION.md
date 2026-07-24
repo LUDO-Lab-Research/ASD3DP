@@ -21,7 +21,7 @@ Do not create duplicate or confusing DOI records unintentionally.
 GitHub recognizes a root-level `CITATION.cff`. Setting `type: dataset` makes the
 GitHub citation prompt produce a dataset citation.
 
-Complete the creator fields and add the Zenodo DOI after publication.
+The creator fields and published Zenodo DOI are recorded in `CITATION.cff`.
 
 ## .zenodo.json
 
