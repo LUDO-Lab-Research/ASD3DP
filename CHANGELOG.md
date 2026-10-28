@@ -2,6 +2,12 @@
 
 All notable dataset and repository changes should be documented here.
 
+## Repository documentation
+
+- Links the published ASD3DP paper in the DCASE 2026 proceedings.
+- Replaces the submission-status badge and pending paper citation with the
+  official proceedings metadata.
+
 ## v0.4.3 public dataset release
 
 - Adds or rebuilds derived annotation resources without changing the released

@@ -18,9 +18,11 @@ temporal event detection, and future cross-build domain-generalization studies.
 > **Dataset download:** [Zenodo (DOI: 10.5281/zenodo.21313911)](https://doi.org/10.5281/zenodo.21313911)
 >
 > **Interactive synchronization demo:** [asd3dp.ludo-demo.com](https://asd3dp.ludo-demo.com)
+>
+> **DCASE 2026 paper:** [ASD3DP: A Process-Aligned Dataset for Soft and Hard Anomaly Detection in FFF 3D Printing](https://dcase.community/documents/workshop2026/proceedings/DCASE2026Workshop_Kim_5.pdf)
 
 [![GitHub](https://img.shields.io/badge/GitHub-ASD3DP-181717?logo=github)](https://github.com/LUDO-Lab-Research/ASD3DP)
-![DCASE Workshop](https://img.shields.io/badge/DCASE_Workshop-submitted-2563eb)
+[![DCASE Workshop](https://img.shields.io/badge/DCASE_2026-published-2563eb)](https://dcase.community/workshop2026/proceedings)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-open-0f766e)](https://asd3dp.ludo-demo.com)
 [![Zenodo](https://img.shields.io/badge/Zenodo-published-1682d4?logo=zenodo)](https://doi.org/10.5281/zenodo.21313911)
 
@@ -257,7 +259,7 @@ Recommended reporting includes:
 
 ## Baseline
 
-The associated study reports a DCASE-style autoencoder baseline and a submitted
+The published DCASE 2026 study reports a DCASE-style autoencoder baseline and a
 frozen-SSLAM nearest-neighbor system. Internal experiment directory identifiers
 are not used as public system names.
 
@@ -313,9 +315,22 @@ https://doi.org/10.5281/zenodo.21313911
 ```
 Associated paper:
 
-```text
-[Pending]
+```bibtex
+@inproceedings{kim2026,
+  author = {Kim, JeongSik and Sung, JongWoo and Bae, HyeonJun and Kim, BoRyeon and Lee, JiAn},
+  title = {ASD3DP: A Process-Aligned Dataset for Soft and Hard Anomaly Detection in FFF 3D Printing},
+  booktitle = {Proceedings of the 11th Workshop on Detection and Classification of Acoustic Scenes and Events (DCASE 2026)},
+  address = {Boston, USA},
+  month = {October},
+  year = {2026},
+  pages = {6--10},
+  isbn = {979-8-234-25461-0},
+  doi = {10.5281/zenodo.22954971}
+}
 ```
+
+[Official proceedings entry](https://dcase.community/workshop2026/proceedings) ·
+[Paper PDF](https://dcase.community/documents/workshop2026/proceedings/DCASE2026Workshop_Kim_5.pdf)
 
 ## Voron platform attribution
 
